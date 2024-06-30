@@ -58,9 +58,16 @@ function calculateNHIF(grossSalary) {
     }
     return nhif;
 }
-console.log(calculateNHIF(18000))
+//console.log(calculateNHIF(18000))
 
-/*
+// Function to calculate NSSF deductions
+function calculateNSSF(grossSalary) {
+    // Assuming the standard rate of 6% up to a maximum of Ksh. 1080
+    return Math.min(grossSalary * 0.06, 1080);
+}
+
+//console.log(calculateNSSF(70000))
+
 // Function to calculate the net salary
 function calculateNetSalary(basicSalary, benefits) {
     let grossSalary = basicSalary + benefits;
@@ -76,6 +83,18 @@ function calculateNetSalary(basicSalary, benefits) {
         nssf: nssf,
         netSalary: netSalary
     };
-} */
+} 
+let basicSalary = 35000; // Input basic salary
+let benefits = 10000; // Input benefits
+
+let salaryDetails = calculateNetSalary(basicSalary, benefits);
+
+console.log(`Gross Salary: Ksh ` + salaryDetails.grossSalary);
+console.log(`PAYE (Tax): Ksh ` + salaryDetails.paye);
+console.log(`NHIF Deductions: Ksh ` + salaryDetails.nhif);
+console.log(`NSSF Deductions: Ksh ` + salaryDetails.nssf);
+console.log(`Net Salary: Ksh ` + salaryDetails.netSalary);
+
+console.log(salaryDetails)
 
 
