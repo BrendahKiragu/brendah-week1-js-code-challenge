@@ -1,3 +1,4 @@
+//function declaration and variables assignment
 function checkSpeed(speed) {
     const speedLimit = 70;
     const kmPerDemeritPoint = 5;
@@ -14,4 +15,5 @@ function checkSpeed(speed) {
     }
 }
 
+//function call with an argument
 checkSpeed(90);
