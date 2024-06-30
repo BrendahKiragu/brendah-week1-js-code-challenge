@@ -16,9 +16,9 @@ function calculatePAYE(grossSalary) {
     }
     return tax;
 }
-console.log(calculatePAYE(15000))
+//console.log(calculatePAYE(50000))
 
-/*// Function to calculate NHIF deductions
+// Function to calculate NHIF deductions
 function calculateNHIF(grossSalary) {
     let nhif;
     if (grossSalary <= 5999) {
@@ -58,7 +58,9 @@ function calculateNHIF(grossSalary) {
     }
     return nhif;
 }
+console.log(calculateNHIF(18000))
 
+/*
 // Function to calculate the net salary
 function calculateNetSalary(basicSalary, benefits) {
     let grossSalary = basicSalary + benefits;

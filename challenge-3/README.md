@@ -16,5 +16,4 @@ Above 800,000	              Above 9,600,000   	      35.0
 
 
 Links to an external site.-  Links to an external site.Links to an external site.
-
 - www.kra.go.ke/en/individual/calculate-tax/calculating-tax/paye
