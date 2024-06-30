@@ -1,4 +1,4 @@
-// Function to calculate PAYE (Tax)
+// Function for calculating PAYE(tax)
 function calculatePAYE(grossSalary) {
     let tax;
     if (grossSalary <= 24000) {
@@ -18,7 +18,7 @@ function calculatePAYE(grossSalary) {
 }
 //console.log(calculatePAYE(50000))
 
-// Function to calculate NHIF deductions
+// Function for calculating NHIF deductions
 function calculateNHIF(grossSalary) {
     let nhif;
     if (grossSalary <= 5999) {
@@ -62,7 +62,7 @@ function calculateNHIF(grossSalary) {
 
 // Function to calculate NSSF deductions
 function calculateNSSF(grossSalary) {
-    // Assuming the standard rate of 6% up to a maximum of Ksh. 1080
+    //The standard rate is 6% up to a maximum of Ksh. 1080
     return Math.min(grossSalary * 0.06, 1080);
 }
 
@@ -84,6 +84,7 @@ function calculateNetSalary(basicSalary, benefits) {
         netSalary: netSalary
     };
 } 
+
 let basicSalary = 35000; // Input basic salary
 let benefits = 10000; // Input benefits
 
