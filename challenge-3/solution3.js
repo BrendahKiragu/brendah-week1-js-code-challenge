@@ -62,7 +62,7 @@ function calculateNHIF(grossSalary) {
 
 // Function to calculate NSSF deductions
 function calculateNSSF(grossSalary) {
-    //The standard rate is 6% up to a maximum of Ksh. 1080
+    //The standard rate is 6% of gross salary, with a maximum of Ksh. 1080
     return Math.min(grossSalary * 0.06, 1080);
 }
 
@@ -95,6 +95,7 @@ console.log(`PAYE (Tax): Ksh ` + salaryDetails.paye);
 console.log(`NHIF Deductions: Ksh ` + salaryDetails.nhif);
 console.log(`NSSF Deductions: Ksh ` + salaryDetails.nssf);
 console.log(`Net Salary: Ksh ` + salaryDetails.netSalary);
+
 
 console.log(salaryDetails)
 
