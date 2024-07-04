@@ -1,14 +1,14 @@
 //declares the function
 //'marks' prompts the user to enter student marks and converts it to a floating-point number
 function studentGradeGenerator (){
-  let marks = parseFloat(prompt('Enter student marks(0 - 100)'));
+  let marks = prompt('Enter student marks(0 - 100)');
 
   //'while loop' repeatedly prompts the user until valid input is provided
   // 'alert' alerts the user if the input is invalid and prompts again till a valid input is provided.
   while (isNaN(marks) || marks < 0 || marks> 100){
     alert("Invalid input. Please enter a number between 0 and 100");
 
-   marks = parseFloat(prompt("Enter student marks (0 - 100)"));
+   marks = prompt("Enter student marks (0 - 100)");
    
   }
 

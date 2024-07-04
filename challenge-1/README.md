@@ -25,7 +25,6 @@ E: Marks below 40
 The result is now shown using alert to display the marks and corresponding grade.
 
 # Running the function. 
- To run the function, you can either:
- 1. Open the browser's console and run it there.
- 2. Include the fuction in a html file using <script> </script>, then load the html file in a browser and run it.
-
+ To run the function:
+ 1. Open the index.html in a browser.
+ 
