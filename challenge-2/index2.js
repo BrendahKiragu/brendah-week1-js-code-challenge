@@ -15,5 +15,5 @@ function checkSpeed(speed) {
     }
 }
 
-//function call with an argument
+//function call and input an argument inside parenthesis 
 checkSpeed(90);
