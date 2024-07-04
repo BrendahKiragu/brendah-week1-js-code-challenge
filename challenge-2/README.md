@@ -25,9 +25,11 @@ If the speed exceeds the speedLimit, this ->(const demeritPoints = Math.floor((s
 If (demeritPoints >=12), it logs "License suspended", indicating that the driver's license will be suspended due to excessive speeding.
 Else, it logs `Points: ${demeritPoints}` followed by the number of demerit points accumulated, indicating how close the driver is to having their license suspended.
 
-
-
 # call the function to test it.
 checkSpeed(90);  // Output: Points: 4
 checkSpeed(140); // Output: License suspended
 checkSpeed(69);  // Output: Ok
+
+## step4 : Running the code
+- cd to challenge-2 folder.
+- Then On the terminal run this command node index2.js
