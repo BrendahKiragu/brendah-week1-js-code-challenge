@@ -42,4 +42,4 @@ Links to an external site.-  Links to an external site.Links to an external site
 - www.kra.go.ke/en/individual/calculate-tax/calculating-tax/paye
 
 ## execution of code
-On the terminal run node index.js
+Open solution3.html in a browser.
