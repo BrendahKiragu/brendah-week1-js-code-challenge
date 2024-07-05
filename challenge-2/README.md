@@ -31,5 +31,4 @@ checkSpeed(140); // Output: License suspended
 checkSpeed(69);  // Output: Ok
 
 ## step4 : Running the code
-- cd to challenge-2 folder.
-- Then On the terminal run this command node index2.js
+Open solution2.html file in a browser
