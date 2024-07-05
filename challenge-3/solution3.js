@@ -85,7 +85,7 @@ function calculateNetSalary(basicSalary, benefits) {
     };
 } 
 
-let basicSalary = 35000; // Input basic salary
+let basicSalary = 10000; // Input basic salary
 let benefits = 10000; // Input benefits
 
 let salaryDetails = calculateNetSalary(basicSalary, benefits);
