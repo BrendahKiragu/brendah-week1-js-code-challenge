@@ -1,6 +1,6 @@
 # Phase 1 Week 1 Code Challenge - JavaScript Toy Problems
 
-In this code cahllenge you will find three challenges that test your understanding of JavaScript fundamentals.
+In this code challenge you will find three challenges that test your understanding of JavaScript fundamentals.
 
 # Prerequisites: 
 
