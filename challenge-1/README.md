@@ -26,5 +26,5 @@ The result is now shown using alert to display the marks and corresponding grade
 
 # Running the function. 
  To run the function:
- 1. Open the index.html in a browser.
+ 1. Open the solution1.html in a browser.
  
