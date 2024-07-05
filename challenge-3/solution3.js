@@ -85,18 +85,27 @@ function calculateNetSalary(basicSalary, benefits) {
     };
 } 
 
-let basicSalary = 10000; // Input basic salary
-let benefits = 10000; // Input benefits
+const displaySalaryDetails = (basicSalary, benefits) => {
+    const details = calculateNetSalary(basicSalary, benefits);
 
-let salaryDetails = calculateNetSalary(basicSalary, benefits);
+    console.log(`Gross Salary: Ksh ${details.grossSalary.toFixed(2)}`);
+    console.log(`PAYE (Tax): Ksh ${details.paye.toFixed(2)}`);
+    console.log(`NHIF Deductions: Ksh ${details.nhif.toFixed(2)}`);
+    console.log(`NSSF Deductions: Ksh ${details.nssf.toFixed(2)}`);
+    console.log(`Net Salary: Ksh ${details.netSalary.toFixed(2)}`);
+};
 
-console.log(`Gross Salary: Ksh ` + salaryDetails.grossSalary);
-console.log(`PAYE (Tax): Ksh ` + salaryDetails.paye);
-console.log(`NHIF Deductions: Ksh ` + salaryDetails.nhif);
-console.log(`NSSF Deductions: Ksh ` + salaryDetails.nssf);
-console.log(`Net Salary: Ksh ` + salaryDetails.netSalary);
+// Get user input for basic salary and benefits
+//parseFloat convert the input(string) to a number
+const basicSalary = parseFloat(prompt('Enter basic salary:'));
+const benefits = parseFloat(prompt('Enter benefits:'));
 
+// Calculate and display the salary details
+const salaryDetails = calculateNetSalary(basicSalary, benefits);
 
-console.log(salaryDetails)
-
-
+alert(`Your salary details are:\n
+Gross Salary: Ksh ${salaryDetails.grossSalary.toFixed(2)}\n
+PAYE (Tax): Ksh ${salaryDetails.paye.toFixed(2)}\n
+NHIF Deductions: Ksh ${salaryDetails.nhif.toFixed(2)}\n
+NSSF Deductions: Ksh ${salaryDetails.nssf.toFixed(2)}\n
+Net Salary: Ksh ${salaryDetails.netSalary.toFixed(2)}`);
