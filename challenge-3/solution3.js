@@ -1,19 +1,19 @@
 // Function for calculating PAYE(tax)
 function calculatePAYE(grossSalary) {
-    let tax;
+    let tax = 0;
+
     if (grossSalary <= 24000) {
-        tax = grossSalary * 0.1; 
+        tax = grossSalary * 0.1;
     } else if (grossSalary <= 32333) {
-        tax = grossSalary * 0.25;
-    } else if (grossSalary <= 500000){
-        tax = grossSalary * 0.30;
+        tax = (24000 * 0.1) + ((grossSalary - 24000) * 0.25);
+    } else if (grossSalary <= 500000) {
+        tax = (24000 * 0.1) + ((32333 - 24000) * 0.25) + ((grossSalary - 32333) * 0.30);
+    } else if (grossSalary <= 800000) {
+        tax = (24000 * 0.1) + ((32333 - 24000) * 0.25) + ((500000 - 32333) * 0.30) + ((grossSalary - 500000) * 0.325);
+    } else {
+        tax = (24000 * 0.1) + ((32333 - 24000) * 0.25) + ((500000 - 32333) * 0.30) + ((800000 - 500000) * 0.325) + ((grossSalary - 800000) * 0.35);
     }
-    else if (grossSalary <= 800000) {
-        tax = grossSalary * 0.325;  
-    }
-     else {
-        tax = grossSalary * 0.35;  
-    }
+
     return tax;
 }
 //console.log(calculatePAYE(50000))
